@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.multifuncetionapp.SMS">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Nomor"
+        android:id="@+id/txtnumber"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        app:met_iconLeft="@drawable/ic_person_black_24dp"
+        app:met_baseColor="#000"
+        app:met_primaryColor="#000"
+        app:met_errorColor="#f00"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnumber"
+        android:hint="Masukan Pesan"
+        android:id="@+id/txtpesan"
+        android:inputType="text"
+        android:layout_marginTop="50dp"
+        app:met_iconLeft="@drawable/ic_person_black_24dp"
+        app:met_baseColor="#000"
+        app:met_primaryColor="#000"
+        app:met_errorColor="#f00"
+        android:lines="10"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsend"
+        android:text="Kirim"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
